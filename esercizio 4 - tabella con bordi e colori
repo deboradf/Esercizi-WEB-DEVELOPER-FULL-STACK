@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border:1.5px solid;
+            border-collapse: collapse;
+            border-color: lightgray;
+        }
+        th {
+            background-color: #BD9001;
+            color: #FFFFC1;
+            border:1.5px solid;
+            border-collapse: collapse;
+            border-color: lightgray;
+        }
+        td {
+            border:1.5px solid;
+            border-collapse: collapse;
+            border-color: lightgray;
+        }
+        .riga-colorata {
+            background-color: #FEE799;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th width="150px" align="center">ALBERGO</th>
+                <th width="150px" align="center">REGIONE</th>
+                <th width="150px" align="center">STELLE</th>
+                <th width="150px" align="center">COSTO CAMERA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="riga-colorata">
+                <td align="left">Aristeo</td>
+                <td align="left">Emilia Romagna</td>
+                <td align="center">1</td>
+                <td align="center">76,00 €</td>
+            </tr>
+            <tr>
+                <td align="left">L'essenza</td>
+                <td align="left">Lombardia</td>
+                <td align="center">2</td>
+                <td align="center">87,00 €</td>
+            </tr>
+            <tr class="riga-colorata">
+                <td align="left">Sara</td>
+                <td align="left">Lombardia</td>
+                <td align="center">4</td>
+                <td align="center">142,00 €</td>
+            </tr>
+            <tr>
+                <td align="left">Grand hotel</td>
+                <td align="left">Emilia Romagna</td>
+                <td align="center">5</td>
+                <td align="center">280,00 €</td>
+            </tr>
+            <tr class="riga-colorata">
+                <td align="left">Capriccio</td>
+                <td align="left">Calabria</td>
+                <td align="center">4</td>
+                <td align="center">155,00 €</td>
+            </tr>
+            <tr>
+                <td align="left">Ambassador</td>
+                <td align="left">Calabria</td>
+                <td align="center">2</td>
+                <td align="center">84,00 €</td>
+            </tr>
+            <tr class="riga-colorata">
+                <td align="left">Aster</td>
+                <td align="left">Emilia Romagna</td>
+                <td align="center">3</td>
+                <td align="center">134,00 €</td>
+            </tr>
+            <tr>
+                <td align="left">Jazz</td>
+                <td align="left">Sardegna</td>
+                <td align="center">3</td>
+                <td align="center">134,00 €</td>
+            </tr>
+    </table>
+</body>
+</html>
