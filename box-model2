@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h3{
+            font-size: 25pt;
+        }
+        div {
+            padding: 20px 20px 20px 20px;
+            background-color: #F0F0F0;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14pt;
+       }
+       sup {
+        font-size: 7pt;
+       }
+       button {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0171DF;
+            font-size: 9pt;
+            font-weight: lighter;
+            width: 150px;
+            border: none;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px 20px 20px 20px;
+        }   
+       </style>
+</head>
+<body>
+    <div>
+        <h3>Trade In</h3>
+        <p>Get $180-$650 in credit when<br>
+            you trade in Phone 12 or higher.<sup>1</sup>
+        </p>
+        <br><button>Get your estimate</button></div> 
+        <img src="https://www.telstra.com.au/content/dam/tcom/library/tex-exchange/iPhone15TradeIn_article_824x464.png" width="100%">
+    </div>  
+</body>
+</html>
