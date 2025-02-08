@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+        background-color: #FBDF72;
+     }
+     div {
+        background: white;
+        text-align: center;
+        margin-top: 20px;
+        border: 5px solid #CF9800;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 5px 5px 5px gray;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>GUIDE FACILI PER IMPARARE L'INFORMATICA</h3>
+        <p>Scarica gratis o acquista i libri<br>
+            Pc da zero di Crestani Gianni<br>
+            <b>PC da Zero Volume 1<br>
+            PC da Zero Volume 2 (Office)<br>
+            Windows 10 istruzioni facili per l'uso<br></b>
+            clicca sull'immagine a fianco -- > >
+        </p>
+    </div>     
+</body>
+</html>
