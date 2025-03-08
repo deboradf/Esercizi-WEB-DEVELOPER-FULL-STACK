@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        @media screen and (min-width:381px) {
+            .contenitore {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .box-1 {
+                background-image: url(https://www.apple.com/v/apple-watch-series-10/c/images/meta/apple-watch-series-10__c6destep56c2_og.png);
+                background-repeat: no-repeat;
+                background-position: center 160px;
+                background-size: 65%;
+                background-color: white;
+                color: black;
+                border-color: white;
+                border-style: solid;
+                border-width: 5px 2.5px 2.5px 5px;
+                width: 50%;
+                height: 400px;
+                padding-top: 30px;
+                padding-bottom: 0px;
+                font-size: 12pt;
+            }
+            .logo {
+                width: 3%;
+                margin-right: 5px;
+            }
+            .box-2 {
+                background-image: url(https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/article/Apple-iPad-Pro-hero-240507_big.jpg.large.jpg);
+                background-repeat: no-repeat;
+                background-position: center 135px;
+                background-size: 50%;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-style: solid;
+                border-width: 5px 5px 2.5px 2.5px;
+                width: 50%;
+                height: 400px;
+                padding-top: 30px;
+                font-size: 12pt;
+            }
+            .box-3 {
+                background-image: url(https://www.apple.com/v/macbook-pro/ao/images/overview/welcome/welcome_hero_endframe__c61x1mv7kgqe_large.jpg);
+                background-repeat: no-repeat;
+                background-position: center 170px;
+                background-size: 50%;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-style: solid;
+                border-width: 2.5px 2.5px 5px 5px;
+                width: 50%;
+                height: 400px;
+                padding-top: 30px;
+                font-size: 12pt;
+            }
+            .box-4 {
+                background-image: url(data:image/jpeg;base64,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);
+                background-repeat: no-repeat;
+                background-position: center 10px;
+                background-size: 90%;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-style: solid;
+                border-width: 2.5px 5px 5px 2.5;
+                width: 50%;
+                height: 400px;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                font-size: 12pt;
+            }
+            .box-4 h1 {
+                margin-top: 200px;
+            }
+            h1 {
+                font-weight: 500;
+                font-size: 25px;
+            }
+            h6 {
+                letter-spacing: 1px;
+                padding-bottom: 5px;
+            }
+            .box-1 h1 {
+                font-weight: 600;
+            }
+            sup {
+            font-size: 6pt;
+            }
+            button {
+                font-size: 9pt;
+                font-weight: lighter;
+                height: 30px;
+                border-radius: 20px 20px 20px 20px;
+                cursor: pointer;
+            }
+            .button-2 {
+                padding-top: 3%;
+            }
+            .dark {
+                background-color: #0065EB;
+                color: white;
+                width: 90px;
+                border: none;
+                margin-right: 10px;
+            }
+            .dark:hover {
+                background-color: #006BF6;
+            }
+            .light {
+                background-color: black;
+                border: 1px solid #0065EB;
+                color: #0065EB;
+                width: 60px;
+            }
+            .light:hover {
+                background-color: #0065EB;
+                color: white;
+                border: none;
+            }
+            .box-1 .light {
+                background-color: white;
+                border: 1px solid #0065EB;
+                color: #0065EB;
+                width: 60px;
+                cursor: pointer;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+            a:hover {
+                color: white;
+            }
+            .light-watch {
+                background-color: white;
+                border: 1px solid #0065EB;
+                color: #0065EB;
+                width: 60px;
+            }
+            .light-watch:hover {
+                background-color: #0065EB;
+                color: white;
+                border: none;
+                color: white;
+            }
+            .rainbow {
+                font-size: 9px;
+                font-weight: bold;
+                padding-top: 200px;
+                background: linear-gradient(to right, #0085FF,#FF4200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        }
+        @media only screen and (max-width:380px) {
+            .contenitore {
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 2px;
+            }
+            .box-1 {
+                background-image: url(https://www.apple.com/v/apple-watch-series-10/c/images/meta/apple-watch-series-10__c6destep56c2_og.png);
+                background-repeat: no-repeat;
+                background-position: center 160px;
+                background-size: 65%;
+                background-color: white;
+                color: black;
+                border-color: white;
+                border-style: solid;
+                border-width: 5px 2.5px 2.5px 5px;
+                width: 100%;
+                height: 400px;
+                padding-top: 30px;
+                font-size: 12pt;
+            }
+            .logo {
+                width: 5%;
+            }
+            .box-2 {
+                background-image: url(https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/article/Apple-iPad-Pro-hero-240507_big.jpg.large.jpg);
+                background-repeat: no-repeat;
+                background-position: center 135px;
+                background-size: 50%;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-style: solid;
+                border-width: 5px 5px 2.5px 2.5px;
+                width: 100%;
+                height: 400px;
+                padding-top: 30px;
+                font-size: 12pt;
+            }
+            .box-3 {
+                background-image: url(https://www.apple.com/v/macbook-pro/ao/images/overview/welcome/welcome_hero_endframe__c61x1mv7kgqe_large.jpg);
+                background-repeat: no-repeat;
+                background-position: center 170px;
+                background-size: 50%;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-style: solid;
+                border-width: 2.5px 2.5px 5px 5px;
+                width: 100%;
+                height: 400px;
+                padding-top: 30px;
+                font-size: 12pt;
+            }
+            .box-4 {
+                background-image: url(data:image/jpeg;base64,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);
+                background-repeat: no-repeat;
+                background-position: center 10px;
+                background-size: 90%;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-style: solid;
+                border-width: 2.5px 5px 5px 2.5;
+                width: 100%;
+                height: 400px;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                font-size: 12pt;
+            }
+            .box-4 h1 {
+                margin-top: 200px;
+            }
+            h1 {
+                font-weight: 500;
+                font-size: 25px;
+            }
+            h6 {
+                letter-spacing: 1px;
+                padding-bottom: 5px;
+            }
+            .box-1 h1 {
+                font-weight: 600;
+            }
+            sup {
+            font-size: 6pt;
+            }
+            button {
+                font-size: 9pt;
+                font-weight: lighter;
+                height: 30px;
+                border-radius: 20px 20px 20px 20px;
+                cursor: pointer;
+            }
+            .button-2 {
+                padding-top: 3%;
+            }
+            .dark {
+                background-color: #0065EB;
+                color: white;
+                width: 90px;
+                border: none;
+                margin-right: 10px;
+            }
+            .dark:hover {
+                background-color: #006BF6;
+            }
+            .light {
+                background-color: black;
+                border: 1px solid #0065EB;
+                color: #0065EB;
+                width: 60px;
+            }
+            .light:hover {
+                background-color: #0065EB;
+                color: white;
+                border: none;
+            }
+            .box-1 .light {
+                background-color: white;
+                border: 1px solid #0065EB;
+                color: #0065EB;
+                width: 60px;
+                cursor: pointer;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+            a:hover {
+                color: white;
+            }
+            .light-watch {
+                background-color: white;
+                border: 1px solid #0065EB;
+                color: #0065EB;
+                width: 60px;
+            }
+            .light-watch:hover {
+                background-color: #0065EB;
+                color: white;
+                border: none;
+                color: white;
+            }
+            .rainbow {
+                font-size: 9px;
+                font-weight: bold;
+                padding-top: 200px;
+                background: linear-gradient(to right, #0085FF,#FF4200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }                  
+        }
+    </style>
+</head>
+<body>
+    <div class="contenitore">
+        <div class="box-1">
+            <h1><img src="apple-svgrepo-com.png" alt="Apple logo" class="logo"/>WATCH</h1>
+            <h6>SERIES 10</h6>
+            <p>
+                Thinstant classic.
+            </p>
+            <!--<div class="button-2"><button class="dark"><a href="https://www.apple.com/apple-watch-series-10/">Learn more</a></button><button class="light"><a href="https://www.apple.com/shop/buy-watch/apple-watch"  class="light-watch">Buy</a></button></div>!-->
+            <div class="button-2"><a href="https://www.apple.com/apple-watch-series-10/"><button class="dark">Learn more</button></a><a href="https://www.apple.com/shop/buy-watch/apple-watch"><button class="light-watch">Buy</button></a></div>
+        </div>
+        <div class="box-2">
+            <h1>iPad Pro</h1>
+            <p>
+                Unbelievably thin. Incredibly powerful.
+            </p>
+            <div class="button-2"><a href="https://www.apple.com/ipad-pro/"><button class="dark">Learn more</button></a><a href="https://www.apple.com/shop/buy-ipad/ipad-pro"><button class="light">Buy</button></a></div>
+            <p class="rainbow">
+                Hello, Apple Intelligence.
+            </p>
+        </div>
+        <div class="box-3">
+            <h1>MacBook Pro</h1>
+            <p>
+                A work of smart.
+            </p>
+            <div class="button-2"><a href="https://www.apple.com/macbook-pro/"><button class="dark">Learn more</button></a><a href="https://www.apple.com/us/shop/goto/buy_mac/macbook_pro"><button class="light">Buy</button></a></div>
+            <p class="rainbow">
+                Hello, Apple Intelligence.
+            </p>
+        </div>
+        <div class="box-4">
+            <h1>AirPods Pro 2</h1>
+            <p>
+            Now with a Hearing Aid feature.<sup>1</sup>
+            </p>
+            <div class="button-2"><a href="https://www.apple.com/airpods-pro/hearing-health/"><button class="dark">Learn more</button></a><a href="https://www.apple.com/shop/buy-airpods/airpods-pro-2"><button class="light">Buy</button></a></div>
+        </div>
+    </div>
+</body>
+</html>
