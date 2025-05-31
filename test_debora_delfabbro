@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h1 {
+            color: #2D2D34;
+        }
+        h2 {
+            color: #B97375;
+        }
+        @media screen and (min-width:761px) {
+            .topnav a.icon {
+                display: none;
+            }
+            .topnav {
+                background-color: #333;
+                overflow: hidden;
+            }
+            .topnav a {
+                float: left;
+                display: block;
+                color: #E2DCDE;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topnav a:hover {
+                background-color: #E2DCDE;
+                color: #2D2d34;
+            }
+            .topnav a.active {
+                color: #B97375;
+            }
+            .storia {
+                padding: 30px;
+                background-color: #2D2D34;
+                color: #E2DCDE;
+            }
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .container {
+                position: relative;
+            }
+            .mySlides {
+                display: none;
+            }
+            .cursor {
+                cursor: pointer;
+            }
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            .numbertext {
+                color: #E2DCDE;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .caption-container {
+                text-align: center;
+                background-color: #2D2D34;
+                padding: 2px 16px;
+                color: #E2DCDE;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .column {
+                float: left;
+                width: 16.66%;
+            }
+            .demo {
+                opacity: 0.6;
+            }
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+        }
+        @media screen and (max-width:760px){
+            .topnav.responsive {position: relative;}
+            .topnav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+            .topnav {
+                background-color: #2D2D34;
+                overflow: hidden;
+            }
+            .topnav a {
+                float: left;
+                display: block;
+                color: #E2DCDE;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topnav a:hover {
+                background-color: #E2DCDE;
+                color: #2D2D34;
+            }
+            .topnav a.active {
+                color: #B97375
+            }
+            .storia {
+                padding: 30px;
+                background-color: #2D2D34;
+                color: #E2DCDE;
+            }
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .container {
+                position: relative;
+            }
+            .mySlides {
+                display: none;
+            }
+            .cursor {
+                cursor: pointer;
+            }
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            .numbertext {
+                color: #E2DCDE;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .caption-container {
+                text-align: center;
+                background-color: #2D2D34;
+                padding: 2px 16px;
+                color: #E2DCDE;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .column {
+                float: left;
+                width: 16.66%;
+            }
+            .demo {
+                opacity: 0.6;
+            }
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#storia">Storia</a>
+        <a href="#discografia">Discografia</a>
+        <a href="#contatti">Contatti</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+    </div>
+    <section class="storia">
+        <p class="leading"><strong>Edward Christopher Sheeran (Halifax, 17 febbraio 1991) è un cantautore britannico.</strong></p>
+        <p>Il suo stile musicale non ha mai subito particolari deviazioni artistiche, basato prevalentemente sulla musica pop con elementi folk, soul e contemporary R&B, oltre a forti influenze derivanti dalla musica tradizionale irlandese. Ha ottenuto grande successo e popolarità in America del Nord, Oceania ed Europa, soprattutto nel Regno Unito, suo paese natale, dove ha infranto svariati record di vendite.</p>
+        <p>Nel 2011 l'artista ha firmato un contratto discografico con la Asylum Records, sotto la quale ha raggiunto la fama internazionale con il suo terzo album +, certificato sette volte disco di platino in Regno Unito, dove ha inoltre trascorso 200 settimane nella Official Albums Chart. Dopo aver compiuto sporadiche apparizioni nell'album Red di Taylor Swift, nonché nel relativo tour mondiale, nel 2014 ha pubblicato X, che ha superato il successo dell'album precedente, vendendo oltre 10 milioni di copie a livello globale, risultando l'album più venduto dell'anno e conquistando la vetta delle classifiche musicali di 15 Paesi, trainato dai singoli Sing, Don't, Thinking Out Loud, Bloodstream e Photograph, divenuti delle vere e proprie hit internazionali.</p>
+        <p>Nel 2017 è stata la volta di ÷, anch'esso di grande successo commerciale, grazie soprattutto a due dei cinque estratti, Shape of You e Perfect, che hanno guidato l'album verso la prima posizione dei maggiori mercati musicali. Il relativo ÷ Tour si è rivelata la tournée più redditizia e vista nella storia della musica, con un incasso di più di 737 milioni di dollari e un pubblico di 8,5 milioni di persone, superando lo U2 360° Tour degli U2. Con oltre 150 milioni di dischi venduti a livello globale, di cui 84,5 milioni di copie certificate nei soli Stati Uniti, è nella lista degli artisti musicali con maggiori vendite della storia.</p>
+
+    </section>
+    <div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="https://ilbassoadige.it/wp-content/uploads/2021/02/ed-1280x640.jpg" style="width:100%;height: 400px;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="https://dilei.it/wp-content/uploads/sites/3/2023/04/Ed-Sheeran-che-tempo-che-fa.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="https://www.rollingstone.it/wp-content/uploads/2023/05/ed-sheeran.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="https://cdn.blogo.it/ejtt8vncvflmKMbWcRlBDca_ORA=/1280x720/smart/https://www.blogo.it/app/uploads/sites/5/2025/05/ed-sheeran-20250503-soundsblogit.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="https://dilei.it/wp-content/uploads/sites/3/2023/03/Ed-Sheeran-malattia-moglie.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIzny_99APot3JCSDlkPguvkT6sGuANAavOA&s" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="row">
+        <div class="column">
+        <img class="demo cursor" src="https://ilbassoadige.it/wp-content/uploads/2021/02/ed-1280x640.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ed Sheeran">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="https://dilei.it/wp-content/uploads/sites/3/2023/04/Ed-Sheeran-che-tempo-che-fa.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ed Sheeran">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="https://www.rollingstone.it/wp-content/uploads/2023/05/ed-sheeran.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ed Sheeran">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="https://cdn.blogo.it/ejtt8vncvflmKMbWcRlBDca_ORA=/1280x720/smart/https://www.blogo.it/app/uploads/sites/5/2025/05/ed-sheeran-20250503-soundsblogit.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Ed Sheeran">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="https://dilei.it/wp-content/uploads/sites/3/2023/03/Ed-Sheeran-malattia-moglie.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ed Sheeran">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIzny_99APot3JCSDlkPguvkT6sGuANAavOA&s" style="height:px" onclick="currentSlide(6)" alt="Ed Sheeran">
+        </div>
+    </div>
+    </div>
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+    } 
+    </script>
+    <br>
+    <div>
+        <h1>LA NUOVA CANZONE DI ED SHEERAN</h1>
+        <h2>Il video della nuova canzone di Ed Sheeran in esclusiva</h2><br>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/q_48vyHWls4?si=Eq0Cm_IZPw6fPoW3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+        <h1>IL CONCERTO DI ED SHEERAN A ROMA</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2969.2065651266525!2d12.478302076086262!3d41.90991797123832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDU0JzM1LjciTiAxMsKwMjgnNTEuMiJF!5e0!3m2!1sit!2sit!4v1748681012591!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+</html>
