@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circonferenza e area del cerchio</title>
+</head>
+<body>
+<h1>Calcolo della circonferenza e dell'area del cerchio</h1>
+<p id="stampa"></p>
+<script>
+var raggio = prompt("Inserire la misura del raggio"," ");
+var circonferenza = raggio * 2 * 3.14159;
+
+var area = 3.14159 * (raggio * raggio);
+
+document.getElementById("stampa").innerHTML = "La circonferenza è: " + circonferenza + "<br>" + "L'area è " + area;
+
+
+</script>    
+    
+</body>
+</html>
