@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    color: #2D2D34;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    font-size: 18pt;
+}
+#numero1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2D2D34;
+    border: 0.5px solid #2D2D34;
+    background-color: #F1E4E8;
+    padding: 5px 0px 5px 10px;
+}
+#numero2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2D2D34;
+    border: 0.5px solid #2D2D34;
+    background-color: #F1E4E8;
+    padding: 5px 0px 5px 10px;
+
+}
+#numero3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2D2D34;
+    border: 0.5px solid #2D2D34;
+    background-color: #F1E4E8;
+    padding: 5px 0px 5px 10px;
+}
+#numero4 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2D2D34;
+    border: 0.5px solid #2D2D34;
+    background-color: #F1E4E8;
+    padding: 5px 0px 5px 10px;
+}
+#attiva {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2D2D34;
+    color: #E2DCDE;
+    border: 0.5px solid #2D2D34;
+    padding: 5px 10px 5px 10px;
+    }
+</style>    
+</head>
+
+<body>
+<h1>FACCIAMO LA MEDIA</h1><br>
+<input type="number" id="numero1"><br><br>
+<input type="number" id="numero2"><br><br>
+<input type="number" id="numero3"><br><br>
+<input type="number" id="numero4"><br><br><br>
+<button id="attiva" onclick="media()">MEDIA</button><br><br>
+<p id="media"></p>
+
+<script>
+function media(){
+    var a = Number(document.getElementById("numero1").value);
+    var b = Number(document.getElementById("numero2").value);
+    var c = Number(document.getElementById("numero3").value);
+    var d = Number(document.getElementById("numero4").value);
+    var e = (a + b + c + d)/4;
+    document.getElementById("media").innerHTML = e;
+
+}
+</script>
+
+  
+</body>
+</html>
