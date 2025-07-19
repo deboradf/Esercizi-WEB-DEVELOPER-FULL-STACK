@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operazione</title>
+</head>
+<body>
+    <h1>Se moltiplichi due numeri e poi ne sottrai un terzo qual è il risultato?</h1>
+
+<label>Facciamo l'operazione!</label><br>
+<input type="number" id="numero1"><br><br>
+<input type="number" id="numero2"><br><br>
+<input type="number" id="numero3"><br><br>
+<button id="attiva" onclick="operazione()">Verifica</button><br><br>
+
+<p id="operazione"></p>
+
+
+<script>
+
+function operazione(){
+    var a = Number(document.getElementById("numero1").value);
+    var b = Number(document.getElementById("numero2").value);
+    var c = Number(document.getElementById("numero3").value);
+    var d = a * b - c;
+    
+    if (d < 0 ) { 
+     var c = c + 10;
+     document.getElementById("operazione").innerHTML = "Accidenti putroppo l'operazione ha restitutito un numero negativo: " + d;
+
+    }
+  
+    else if (d == 0) {
+        document.getElementById("operazione").innerHTML = "Il risultato e zero";
+    }
+
+    else if (d == (isNaN(c)) || c == "Undefined" ) {
+        document.getElementById("operazione").innerHTML = "La funzione a prodotto un risultato inaspettato";
+ 
+    }
+
+   
+    else {
+        document.getElementById("operazione").innerHTML = d;
+    }
+
+
+}
+</script>
