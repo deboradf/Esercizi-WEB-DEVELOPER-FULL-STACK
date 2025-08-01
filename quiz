@@ -1,50 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operazione</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210902/pngtree-mathematics-books-green-simplicity-image_783592.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .spazio-quiz {
+      background-color: darkslategray;
+      color: white;
+      margin: 150px;
+      padding: 50px;
+      overflow: hidden;
+      text-align: center;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </style>
+
 </head>
 <body>
-    <h1>Se moltiplichi due numeri e poi ne sottrai un terzo qual è il risultato?</h1>
+    <div class="spazio-quiz">
+    <h1 style="color: white;">Quanto sei bravo in matematica?</h1>
+    <h3 style="color: yellow;">Scoprilo con questo quiz!</h3><br>
 
-<label>Facciamo l'operazione!</label><br>
-<input type="number" id="numero1"><br><br>
-<input type="number" id="numero2"><br><br>
-<input type="number" id="numero3"><br><br>
-<button id="attiva" onclick="operazione()">Verifica</button><br><br>
+    <div class="prima-domanda">
+    <h3>Quanto fa 150 - 30</h3>
+        <label>
+            <input type="radio" name="sottrazione" value="1" onclick="verificaRisposta(this.value)"> 110
+        </label><br>
 
-<p id="operazione"></p>
+        <label>
+            <input type="radio" name="sottrazione" value="2" onclick="verificaRisposta(this.value)"> 100
+        </label><br>
 
+        <label>
+            <input type="radio" name="sottrazione" value="3" onclick="verificaRisposta(this.value)"> 120
+        </label><br>
 
-<script>
-
-function operazione(){
-    var a = Number(document.getElementById("numero1").value);
-    var b = Number(document.getElementById("numero2").value);
-    var c = Number(document.getElementById("numero3").value);
-    var d = a * b - c;
-    
-    if (d < 0 ) { 
-     var c = c + 10;
-     document.getElementById("operazione").innerHTML = "Accidenti putroppo l'operazione ha restitutito un numero negativo: " + d;
-
-    }
-  
-    else if (d == 0) {
-        document.getElementById("operazione").innerHTML = "Il risultato e zero";
-    }
-
-    else if (d == (isNaN(c)) || c == "Undefined" ) {
-        document.getElementById("operazione").innerHTML = "La funzione a prodotto un risultato inaspettato";
+        <p id="risultato"></p>
+        <script>
+        function verificaRisposta(risposta) {
+            if (risposta === "3") {
+                document.getElementById("risultato").innerText = "Brav*! La risposta è esatta.";
+            } else {
+                document.getElementById("risultato").innerText = "Peccato! La risposta è sbagliata.";
+            }
+        }
+        </script>
+    </div>
  
-    }
+    <div class="seconda-domanda">
+        <h3>Quanto fa 30 x 3 - 50?</h3>
 
-   
-    else {
-        document.getElementById("operazione").innerHTML = d;
-    }
+        <label>
+            <input type="radio" name="operazione" value="4" onclick="verificaRisposta2(this.value)"> 40
+        </label><br>
 
+        <label>
+            <input type="radio" name="operazione" value="5" onclick="verificaRisposta2(this.value)"> 50
+        </label><br>
 
-}
-</script>
+        <label>
+            <input type="radio" name="operazione" value="6" onclick="verificaRisposta2(this.value)"> 60
+        </label><br>
+
+        <p id="risultato2"></p>
+
+        <script>
+        function verificaRisposta2(risposta2) {
+            if (risposta2 === "4") {
+                document.getElementById("risultato2").innerText = "Brav*! La risposta è esatta.";
+            } else {
+                document.getElementById("risultato2").innerText = "Peccato! La risposta è sbagliata.";
+            }
+        }
+        </script>
+    </div>
+
+    <div class="terza-domanda">
+        <h3>Qual è il numero più grande? 3, 5 o 4?</h3>
+
+        <label>
+            <input type="radio" name="maggiore" value="7" onclick="verificaRisposta3(this.value)"> 3
+        </label><br>
+
+        <label>
+            <input type="radio" name="maggiore" value="8" onclick="verificaRisposta3(this.value)"> 5
+        </label><br>
+
+        <label>
+            <input type="radio" name="maggiore" value="9" onclick="verificaRisposta3(this.value)"> 4
+        </label><br>
+
+        <p id="risultato3"></p>
+
+        <script>
+        function verificaRisposta3(risposta3) {
+            if (risposta3 === "8") {
+                document.getElementById("risultato3").innerText = "Brav*! La risposta è esatta.";
+            } else {
+                document.getElementById("risultato3").innerText = "Peccato! La risposta è sbagliata.";
+            }
+        }
+        </script>
+    </div>
+
+    <div class="quarta-domanda">
+        <h3>Cosa succede dopo? 1, 3, 5, ...</h3>
+
+        <label>
+            <input type="radio" name="sequenza" value="10" onclick="verificaRisposta4(this.value)"> 7
+        </label><br>
+
+        <label>
+            <input type="radio" name="sequenza" value="11" onclick="verificaRisposta4(this.value)"> 6
+        </label><br>
+
+        <label>
+            <input type="radio" name="sequenza" value="12" onclick="verificaRisposta4(this.value)"> 9
+        </label><br>
+
+        <p id="risultato4"></p>
+
+        <script>
+        function verificaRisposta4(risposta4) {
+            if (risposta4 === "10") {
+                document.getElementById("risultato4").innerText = "Brav*! La risposta è esatta.";
+            } else {
+                document.getElementById("risultato4").innerText = "Peccato! La risposta è sbagliata.";
+            }
+        }
+        </script>
+    </div>
+
+    <div class="quinta-domanda">
+        <h3>Sara ha 24 adesivi. Ne dà 8 alla sua amica. Quanti ne ha ancora?</h3>
+
+        <label>
+            <input type="radio" name="problema" value="13" onclick="verificaRisposta5(this.value)"> 18 adesivi
+        </label><br>
+
+        <label>
+            <input type="radio" name="problema" value="14" onclick="verificaRisposta5(this.value)"> 16 adesivi
+        </label><br>
+
+        <label>
+            <input type="radio" name="problema" value="15" onclick="verificaRisposta5(this.value)"> 20 adesivi
+        </label><br>
+
+        <p id="risultato5"></p>
+
+        <script>
+        function verificaRisposta5(risposta5) {
+            if (risposta5 === "14") {
+                document.getElementById("risultato5").innerText = "Brav*! La risposta è esatta.";
+            } else {
+                document.getElementById("risultato5").innerText = "Peccato! La risposta è sbagliata.";
+            }
+        }
+        </script>
+    </div>
+  
+</body>
+</html>
