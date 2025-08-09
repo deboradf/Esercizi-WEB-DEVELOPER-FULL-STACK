@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        button {
+            background-color: darkslategray;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+        button:hover {
+            background-color: darkolivegreen;
+            padding: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraph1" style="display:none">Scopri il mio sito</p>
+    <p id="paragraph2" style="display:none">Scopri la mia storia</p>
+    <p id="paragraph3" style="display:none">Contatti</p>
+    <button type="button" onclick='document.getElementById("paragraph1").style.display= "block"'>Vai al sito!</button>
+    <button type="button" onclick='document.getElementById("paragraph2").style.display= "block"'>Scopri la storia</button>
+    <button type="button" onclick='document.getElementById("paragraph3").style.display= "block"'>Vai ai contatti</button>
+
+<script>
+
+    document.getElementById('paragraph1').innerHTML = '<header style="background-color:darkgray;text-align:center;font-family:Montserrat;padding:20px;"><h1>Ed Sheeran</h1></header>' 
+    document.getElementById('paragraph2').innerHTML = '<header style="background-color:darkgreen;text-align:center;font-family:Montserrat;padding:20px;">Ed Sheeran, pseudonimo di Edward Christopher Sheeran, nato a Halifax il 17 febbraio 1991, è un cantautore e chitarrista britannico. Il suo stile musicale non ha mai subito particolari deviazioni artistiche, basato prevalentemente sulla musica pop con elementi folk, soul e contemporary R&B, oltre a forti influenze derivanti dalla musica tradizionale irlandese. Ha ottenuto grande successo e popolarità in America del Nord, Oceania ed Europa, soprattutto nel Regno Unito, suo paese natale, dove ha infranto svariati record di vendite.</header>'
+    document.getElementById('paragraph3').innerHTML = '<header style="background-color:yellow;text-align:center;font-family:Montserrat;padding:20px;"><b>Contatti:</b> 0033009955, email edsheeran@ed.com <br> <b>Canale Ticketone:</b> <a href="https://www.ticketone.it/artist/ed-sheeran/">Vai a Ticketone</a></header>'    
+
+</script>
